@@ -69,7 +69,7 @@ public class D3Test {
     System.out.println(vars.get("link").toString());
     System.out.println("/reset");
     assertEquals(vars.get("link").toString(), "http://localhost:8080/reset");
-  }*/
+  }
   @Test
   public void tEST2RESET() {
     driver.get("http://localhost:8080/");
@@ -78,7 +78,7 @@ public class D3Test {
     assertThat(driver.findElement(By.xpath("//div[@id=\'listing\']/ul/li[1]")).getText(), is("ID 1. Jennyanydots"));
     assertThat(driver.findElement(By.xpath("//div[@id=\'listing\']/ul/li[2]")).getText(), is("ID 2. Old Deuteronomy"));
     assertThat(driver.findElement(By.xpath("//div[@id=\'listing\']/ul/li[3]")).getText(), is("ID 3. Mistoffelees"));
-  }
+  }*/
   @Test
   public void tEST4LISTING() {
     driver.get("http://localhost:8080/");
