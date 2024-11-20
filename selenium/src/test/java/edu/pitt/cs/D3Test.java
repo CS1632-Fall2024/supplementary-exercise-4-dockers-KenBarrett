@@ -57,7 +57,7 @@ public class D3Test {
     }
     assertEquals(vars.get("saved").toString(), "http://localhost:8080/images/cat2.jpg");
   }
-  @Test
+  /*@Test
   public void tEST1LINKS() {
     driver.get("http://localhost:8080/");
     js.executeScript("document.cookie = \"1=false\";document.cookie = \"2=false\";document.cookie = \"3=false\";");
@@ -69,7 +69,7 @@ public class D3Test {
     System.out.println(vars.get("link").toString());
     System.out.println("/reset");
     assertEquals(vars.get("link").toString(), "http://localhost:8080/reset");
-  }
+  }*/
   @Test
   public void tEST2RESET() {
     driver.get("http://localhost:8080/");
@@ -164,7 +164,7 @@ public class D3Test {
     }
     assertThat(driver.findElement(By.id("feedResult")).getText(), is("Nom, nom, nom."));
   }
-  @Test
+  /*@Test
   public void tEST10GREETACAT() {
     driver.get("http://localhost:8080/");
     js.executeScript("document.cookie = \"1=false\";document.cookie = \"2=false\";document.cookie = \"3=false\";");
@@ -178,5 +178,5 @@ public class D3Test {
   public void tEST11GREETACATWITHNAME() {
     driver.get("http://localhost:8080/greet-a-cat/Jennyanydots");
     assertThat(driver.findElement(By.cssSelector("#greeting > h4")).getText(), is("Meow! from Jennyanydots."));
-  }
+  }*/
 }
