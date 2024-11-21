@@ -57,7 +57,7 @@ public class D3Test {
     }
     assertEquals(vars.get("saved").toString(), "http://localhost:8080/images/cat2.jpg");
   }
-  /*@Test
+  @Test
   public void tEST1LINKS() {
     driver.get("http://localhost:8080/");
     js.executeScript("document.cookie = \"1=false\";document.cookie = \"2=false\";document.cookie = \"3=false\";");
@@ -78,7 +78,7 @@ public class D3Test {
     assertThat(driver.findElement(By.xpath("//div[@id=\'listing\']/ul/li[1]")).getText(), is("ID 1. Jennyanydots"));
     assertThat(driver.findElement(By.xpath("//div[@id=\'listing\']/ul/li[2]")).getText(), is("ID 2. Old Deuteronomy"));
     assertThat(driver.findElement(By.xpath("//div[@id=\'listing\']/ul/li[3]")).getText(), is("ID 3. Mistoffelees"));
-  }*/
+  }
   @Test
   public void tEST4LISTING() {
     driver.get("http://localhost:8080/");
@@ -164,7 +164,7 @@ public class D3Test {
     }
     assertThat(driver.findElement(By.id("feedResult")).getText(), is("Nom, nom, nom."));
   }
-  /*@Test
+  @Test
   public void tEST10GREETACAT() {
     driver.get("http://localhost:8080/");
     js.executeScript("document.cookie = \"1=false\";document.cookie = \"2=false\";document.cookie = \"3=false\";");
@@ -178,5 +178,5 @@ public class D3Test {
   public void tEST11GREETACATWITHNAME() {
     driver.get("http://localhost:8080/greet-a-cat/Jennyanydots");
     assertThat(driver.findElement(By.cssSelector("#greeting > h4")).getText(), is("Meow! from Jennyanydots."));
-  }*/
+  }
 }
