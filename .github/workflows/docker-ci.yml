@@ -41,7 +41,7 @@ jobs:
         run: docker compose up -d
 
       - name: Wait for web server to launch
-        run: bait wait-for-webserver
+        run: wait-for-webserver
 
       - name: Run Selenium Tests
         run: cd selenium && mvn test
